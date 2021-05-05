@@ -56,7 +56,7 @@ nav ul li {
 /****HEADER****/
 .header-wrapper {
   position: relative; 
-  background: url(C:\Users\Admin\Desktop\fun-side-stuff\portfolio\src\amsterdambg2.jpg) no-repeat;
+  background: url('./images/amsterdambg2.jpg') no-repeat;
   background-size: cover; 
   background-position: center; 
   height: 100vh;  
