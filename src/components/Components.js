@@ -1,13 +1,56 @@
-// Copyright 2021 Admin
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-//     http://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import React, { useState } from 'react'; 
+import Navapp from './components/Navapp'; 
+// import Header from './components/Header'; 
+import Home from './components/Home'; 
+import AboutMe from './components/AboutMe'; 
+import Skills from './components/Skills'; 
+import Experience from './components/Experience'; 
+import Portfolio from './components/Portfolio'; 
+import Contact from './components/Contact'; 
+ 
+const Components = () => {
+
+    const [currentPage, handlePageChange] = useState('Home');
+
+    const renderPage = (currentPage) => {
+        // Add a switch statement that will return the appropriate component of the 'currentPage'
+        // YOUR CODE HERE
+        switch(currentPage) {
+    
+           case 'About':
+            return <AboutMe /> 
+    
+          case 'Skills':
+            return <Skills /> 
+    
+          case 'Experience':
+            return <Experience /> 
+            
+        case 'Portfolio':
+            return <Portfolio /> 
+
+            case 'Contact':
+            return <Contact /> 
+
+          default:
+           return <Home/>; 
+        }
+      };
+
+      return (
+        <div>
+          <Navapp currentPage={currentPage} handlePageChange={handlePageChange} />
+          <div>
+            {
+              // Render the component returned by 'renderPage()'
+              // YOUR CODE HERE
+              renderPage(currentPage)
+            }
+          </div>
+        </div>
+      );
+}
+
+export default Components; 
