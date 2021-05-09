@@ -170,22 +170,38 @@
 
 // export default Contact
 
-import React from 'react'
+import React, { useState }from 'react'
 import emailjs from 'emailjs-com'; 
+import {useForm} from 'react-hook-form'; 
+
 const Contact = () => {
+    const [successMessage, setSuccessMessage] = useState('');
+    const { register, handleSubmit, errors } = useForm();  
 
     const serviceId = 'service_ID';
     const templateId = 'template_ID';
     const userId = 'user_cMh6yknWEr4hfDBhT5KRb';
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm(serviceId, templateId, e.target, userId)
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+
+    const onSubmit = (data, r) => {
+        sendEmail(
+            serviceId,
+            templateId,
+            {
+                name: data.name,
+                email: data.email, 
+                subject: data.subject, 
+                description: data.description
+            }, 
+            userId
+            )
+            r.target.reset();
+    }
+
+    const sendEmail = (serviceId, templateId, variables, userId) => {
+        emailjs.send(serviceId, templateId, variables, userId)
+          .then(() => {
+              setSuccessMessage('Form sent successfully, I will talk to you soon!');
+          }).catch(err => console.error(`Something went wrong ${err}`))
       }
 
     return (
@@ -195,7 +211,7 @@ const Contact = () => {
             <p>Please fill out the form and I will contact you. </p>
             </div>
             <div className="container">
-                <form onSubmit={sendEmail}>
+                <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='row'>
                     <div className='col-md-6 col-xs-12'>
                         {/*name*/}
@@ -206,9 +222,17 @@ const Contact = () => {
                         className='form-control'
                         placeholder='Name'
                         name='name'
+                        ref={
+                            register({
+                                required: 'Please enter your name.'
+                            })
+                        }
                         />
                         <div className='line'></div>
                         </div>
+                        <span className="error-message">
+                            {errors.name && errors.name.message}
+                        </span>
 
                         {/*email*/}
                         <div className="text-center">
