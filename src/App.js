@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import Particles from 'react-particles-js'; 
+// import Particles from 'react-particles-js'; 
 import Navbar from './components/Navbar';
 // import Header from './components/Header'; 
 import Home from './components/Home'; 
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     {/* little floaty things */}
-    <Particles
+    {/* <Particles
     className='particles-canvas'
     params= {{
       particles: {
@@ -35,11 +35,11 @@ function App() {
           }
         }
       }
-    }} />
+    }} /> */}
     <Router>
     <div className = "App">
     <Navbar />
-    <Switch>
+    {/* <Switch> */}
     {/* <Header />  */}
     <Route exact path = '/' component = {Home} />
     <Route exact path = "/about" component = {AboutMe} />
@@ -47,7 +47,7 @@ function App() {
     <Route exact path = "/experience" component = {Experience} />
     <Route exact path = "/portfolio" component = {Portfolio} />
     <Route exact path = "/contact" component = {Contact} />
-    </Switch>
+    {/* </Switch> */}
     <Footer />
     </div>
     </Router>

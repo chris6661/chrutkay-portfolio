@@ -17,27 +17,27 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             
             <li className="nav-item active">
-              <Link smooth = {true} to = "/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+              <Link  to = "/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item">
-              <Link to = "/about" offset = {-110} className="nav-link" >About Me</Link>
+              <Link to = "/about"  className="nav-link" >About Me</Link>
             </li>
             
             <li className="nav-item">
-              <Link to = "/skills" to = "skills" offset = {-110} className="nav-link" href="#">What I Do</Link>
+              <Link to = "/skills"  className="nav-link" href="#">What I Do</Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth = {true} to = "experience" offset = {-110} className="nav-link" href="#">Experience</Link>
+              <Link to  = "experience" className="nav-link" href="#">Experience</Link>
             </li>
 
             <li className="nav-item">
-              <Link smooth = {true} to = "portfolio" offset = {-110} className="nav-link" href="#">Portfolio</Link>
+              <Link  to = "portfolio"  className="nav-link" href="#">Portfolio</Link>
             </li>
            
             <li className="nav-item">
-              <Link smooth = {true} to = "contact" offset = {-110} className="nav-link" href="#">Contact Me</Link>
+              <Link  to = "contact"  className="nav-link" href="#">Contact Me</Link>
             </li>
 
           </ul>

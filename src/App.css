@@ -369,7 +369,7 @@ nav ul li {
   }
 }
 
-/***CONTACT SECTION***/
+/* **CONTACT SECTION**
 .contact {
   background: var(--primary-dark-grey); 
   padding: 3rem 0; 
@@ -452,7 +452,7 @@ textarea.form-control {
 .success-message {
   font-weight: 900; 
   color: var(--primary-green); 
-}
+} 
 
 /***MEDIA***/
 @media(max-width: 768px) {
