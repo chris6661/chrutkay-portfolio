@@ -170,3 +170,95 @@
 
 // export default Contact
 
+import React from 'react'
+import emailjs from 'emailjs-com'; 
+const Contact = () => {
+
+    const serviceId = 'service_ID';
+    const templateId = 'template_ID';
+    const userId = 'user_cMh6yknWEr4hfDBhT5KRb';
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(serviceId, templateId, e.target, userId)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
+
+    return (
+        <div className="contact">
+            <div className = "text-center">
+            <h1>Contact Me</h1>
+            <p>Please fill out the form and I will contact you. </p>
+            </div>
+            <div className="container">
+                <form onSubmit={sendEmail}>
+                <div className='row'>
+                    <div className='col-md-6 col-xs-12'>
+                        {/*name*/}
+                        <div className="text-center">
+                        <input
+                        id='name'
+                        type='text'
+                        className='form-control'
+                        placeholder='Name'
+                        name='name'
+                        />
+                        <div className='line'></div>
+                        </div>
+
+                        {/*email*/}
+                        <div className="text-center">
+                        <input
+                        id='email'
+                        type='email'
+                        className='form-control'
+                        placeholder='Email'
+                        name='email'
+                        />
+                        <div className='line'></div>
+                        </div>
+
+                        {/*subject*/}
+                        <div className="text-center">
+                        <input
+                        id='subject'
+                        type='text'
+                        className='form-control'
+                        placeholder='Subject'
+                        name='subject'
+                        />
+                        <div className='line'></div>
+                        </div>
+
+                    </div>
+
+                    <div className='col-md-6 col-xs-12'>
+                        {/*MessGE*/}
+                        <div className = 'text-center'>
+                        <textarea
+                        id='message'
+                        type='text'
+                        className='form-control'
+                        placeholder='Message'
+                        name='description'
+                        ></textarea>
+                        <div className='line'></div>
+                        </div>
+
+                        <button className='btn-contact contact-btn' type='submit'>Contact Me</button>
+
+                    </div>
+                </div>
+                </form>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default Contact

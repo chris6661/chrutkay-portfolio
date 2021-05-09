@@ -369,7 +369,7 @@ nav ul li {
   }
 }
 
-/* **CONTACT SECTION**
+ /**CONTACT SECTION**/
 .contact {
   background: var(--primary-dark-grey); 
   padding: 3rem 0; 
@@ -413,7 +413,7 @@ nav ul li {
 }
 
 .contact textarea {
-  height: 12.2rem !important; 
+  height: 8.9rem !important; 
 }
 
 .contact-btn {
