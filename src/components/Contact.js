@@ -209,6 +209,7 @@ const Contact = () => {
             <div className = "text-center">
             <h1>Contact Me</h1>
             <p>Please fill out the form and I will contact you. </p>
+            <span className="success-message">{successMessage}</span>
             </div>
             <div className="container">
                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -231,39 +232,31 @@ const Contact = () => {
                         {/*email*/}
                         <div className="text-center">
                         <input
-                        id='email'
-                        type='email'
-                        className='form-control'
-                        placeholder='Email'
-                        name='email'
-                        ref = {
-                            register({
+                            id='email'
+                            type='email'
+                            className='form-control'
+                            placeholder='Email'
+                            {...register('email', {
                                 required: 'Please provide your email address.',
                                 pattern: {
                                     //email validation characters, can not set less than 2 characters for end
                                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                     message: 'Invalid email address.'
                                 }
-                            })
-                        }
-                        />
+                            })} />
                         <div className='line'></div>
                         </div>
 
                         {/*subject*/}
                         <div className="text-center">
                         <input
-                        id='subject'
-                        type='text'
-                        className='form-control'
-                        placeholder='Subject'
-                        name='subject'
-                        ref = {
-                            register({
+                            id='subject'
+                            type='text'
+                            className='form-control'
+                            placeholder='Subject'
+                            {...register('subject', {
                                 required: 'You forgot to add the subject!',
-                            })
-                        }
-                        />
+                            })} />
                         <div className='line'></div>
                         </div>
 
@@ -273,17 +266,13 @@ const Contact = () => {
                         {/*MessGE*/}
                         <div className = 'text-center'>
                         <textarea
-                        id='message'
-                        type='text'
-                        className='form-control'
-                        placeholder='Message'
-                        name='description'
-                        ref = {
-                            register({
+                            id='message'
+                            type='text'
+                            className='form-control'
+                            placeholder='Message'
+                            {...register('description', {
                                 required: 'Please shortly describe how I can help you.',
-                            })
-                        }
-                        ></textarea>
+                            })}></textarea>
                         <div className='line'></div>
                         </div>
 
