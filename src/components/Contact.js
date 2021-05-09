@@ -217,22 +217,16 @@ const Contact = () => {
                         {/*name*/}
                         <div className="text-center">
                         <input
-                        id='name'
-                        type='text'
-                        className='form-control'
-                        placeholder='Name'
-                        name='name'
-                        ref={
-                            register({
+                            id='name'
+                            type='text'
+                            className='form-control'
+                            placeholder='Name'
+                            {...register('name', {
                                 required: 'Please enter your name.'
-                            })
-                        }
-                        />
+                            })} />
                         <div className='line'></div>
                         </div>
-                        <span className="error-message">
-                            {errors.name && errors.name.message}
-                        </span>
+                        
 
                         {/*email*/}
                         <div className="text-center">
@@ -242,6 +236,16 @@ const Contact = () => {
                         className='form-control'
                         placeholder='Email'
                         name='email'
+                        ref = {
+                            register({
+                                required: 'Please provide your email address.',
+                                pattern: {
+                                    //email validation characters, can not set less than 2 characters for end
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    message: 'Invalid email address.'
+                                }
+                            })
+                        }
                         />
                         <div className='line'></div>
                         </div>
@@ -254,6 +258,11 @@ const Contact = () => {
                         className='form-control'
                         placeholder='Subject'
                         name='subject'
+                        ref = {
+                            register({
+                                required: 'You forgot to add the subject!',
+                            })
+                        }
                         />
                         <div className='line'></div>
                         </div>
@@ -269,6 +278,11 @@ const Contact = () => {
                         className='form-control'
                         placeholder='Message'
                         name='description'
+                        ref = {
+                            register({
+                                required: 'Please shortly describe how I can help you.',
+                            })
+                        }
                         ></textarea>
                         <div className='line'></div>
                         </div>
@@ -282,7 +296,7 @@ const Contact = () => {
             </div>
 
         </div>
-    )
+    );
 }
 
 export default Contact
