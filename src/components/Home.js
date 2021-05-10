@@ -12,7 +12,7 @@ const Home = () => {
                 backSpeed={60}
                 loop
                 />
-                <a href= '#contact' className="btn-contact"> Contact Me </a>
+                <a href= {'contact'} className="btn-contact"> Contact Me </a>
             </div>
         </div>
     )

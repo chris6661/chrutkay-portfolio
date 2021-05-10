@@ -7,7 +7,7 @@ import {
     LinkedinShareButton, 
     LinkedinIcon
 } from 'react-share'; 
-
+import Git from "../images/GitHub-Mark-Light-32px.png"
 
 const Footer = () => {
     return (
@@ -19,7 +19,7 @@ const Footer = () => {
                             <p>Austin, Texas</p>
                         </div>
                         <div className = 'd-flex'>
-                            <a href = '555-555-5555'>+1555-555-5555</a>
+                            <a href = '412-915-4046'>+14129154046</a>
                         </div>
                         <div className = 'd-flex'>
                             <p>chrutkay90@gmail.com</p>
@@ -28,19 +28,20 @@ const Footer = () => {
                     <div className = "col-lg-3 col-md-2 col-sm-6">
                         <div className = 'row'>
                             <div className = 'col'>
-                                <a className = 'footer-nav'>Home</a>
+                                <a href={'home'}className = 'footer-nav'>Home</a>
                                 <br/>
-                                <a className = 'footer-nav'>About Me</a>
+                                <a href={'about'}className = 'footer-nav'>About Me</a>
                                 <br/>
-                                <a className = 'footer-nav'>Skills</a>
+                                {/* <a href={'skills'}className = 'footer-nav'>Skills</a> */}
                             </div>
 
                             <div className = 'col'>
-                                <a className = 'footer-nav'>Experience</a>
+                                <a href={'portfolio'}className = 'footer-nav'>Portfolio</a>
                                 <br/>
-                                <a className = 'footer-nav'>Portfolio</a>
+                                <a href={'contact'}className = 'footer-nav'>Contact</a>
+                                {/* <a href={'Experience'} className = 'footer-nav'>Experience</a> */}
                                 <br/>
-                                <a className = 'footer-nav'>Contact</a>
+                                
                             </div>
 
                         </div>
@@ -50,28 +51,27 @@ const Footer = () => {
                     <div className = 'd-flex justify-content-center'>
                         
                         {/*GitHub*/}
-                      
+                                              
+                        <FacebookShareButton
+                        
+                            >    
+                           <img src={Git} alt="GitHub" className = 'mx-3 git' size = {36} onClick={() => window.open("https://github.com/chris6661")}/>
+                        </FacebookShareButton>
+
                         {/*Linkedin*/}
                         <LinkedinShareButton
                         // url = {/*put portfolio url here */}
                         >    
-                            <LinkedinIcon className = 'mx-3' size = {36}/>
+                            <LinkedinIcon className = 'mx-3' size = {36} onClick={() => window.open("https://www.linkedin.com/in/christopher-hrutkay/")} />
+                            
                        </LinkedinShareButton>
-
-                        {/* facebook */}
-                        <FacebookShareButton
-                        // url = {/*put portfolio url here */}
-                        >    
-                            <FacebookIcon className = 'mx-3' size = {36}/>
-                        </FacebookShareButton>
 
                         {/* twitter */}
                         <TwitterShareButton
                         // url = {/*put portfolio url here */}
                         >    
-                            <TwitterIcon className = 'mx-3' size = {36}/>
+                            <TwitterIcon className = 'mx-3' size = {36} onClick={() => window.open("https://twitter.com/ChrisHrutkay")}/>
                         </TwitterShareButton>
-
                         
                     </div>
                     <p className = 'pt-3 text-center'>

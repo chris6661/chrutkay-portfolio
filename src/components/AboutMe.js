@@ -11,6 +11,7 @@ const AboutMe = () => {
                         </div>
                     </div> 
                 <div className='col-lg-6 col-xm-12'> 
+                <br/>
                 <h1 className = 'about-heading'>About Me</h1>
                 <p>
                 Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. </p>

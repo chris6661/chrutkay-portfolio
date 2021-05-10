@@ -10,16 +10,16 @@ const Experience = () => {
             <div className='timeline-block timeline-block-right'>
                 <div className='marker'></div>
                     <div className='timeline-content'>
-                        <h3>2009-2020</h3>
-                        <p>Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.</p>
+                        <h3>2014-2020</h3>
+                        <p>My first general manager position in a restaurant where I learned how to lead different types of people</p>
                     </div>
                 </div>
                 {/* - */}
                 <div className='timeline-block timeline-block-left'>
                 <div className='marker'></div>
                     <div className='timeline-content'>
-                        <h3>November 2020</h3>
-                        <p>Day 1 journal entry: I started attending the Full Stack Web Development coding boot camp at UTA.</p>
+                        <h3>November 23rd, 2020</h3>
+                        <p>Day 1 of the Full Stack Web Development coding boot camp at UTA.</p>
                     </div>
                 </div>
                 {/* - */}
