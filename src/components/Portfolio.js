@@ -116,7 +116,7 @@ const Portfolio = () => {
   
 
     return (
-        <div className="portoflio-wrapper">
+        <div className="portfolio-wrapper">
             <div className="portfolio-info">
             <div className="container">
                 <br/>

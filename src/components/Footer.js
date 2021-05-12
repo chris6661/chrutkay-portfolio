@@ -28,7 +28,7 @@ const Footer = () => {
                     <div className = "col-lg-3 col-md-2 col-sm-6">
                         <div className = 'row'>
                             <div className = 'col'>
-                                <a href={'home'}className = 'footer-nav'>Home</a>
+                                <a href={'/'}className = 'footer-nav'>Home</a>
                                 <br/>
                                 <a href={'about'}className = 'footer-nav'>About Me</a>
                                 <br/>

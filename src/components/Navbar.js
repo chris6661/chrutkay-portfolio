@@ -6,7 +6,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+      <div className="nav-main">
+        <nav className="navbar navbar-expand-lg  fixed-top">
     <div className='container'>
         <a className="navbar"> </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +24,8 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to = "/about"  className="nav-link" >About Me</Link>
             </li>
-            
-            {/* <li className="nav-item">
+{/*             
+            <li className="nav-item">
               <Link to = "/skills"  className="nav-link" href="#">What I Do</Link>
             </li>
 
@@ -45,6 +46,8 @@ const Navbar = () => {
         </div>
         </div>
       </nav>
+      </div>
+      
     )
 }
 

@@ -1,21 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
+  --primary-black: #141414;
   --primary-white: #fff;
-  --primary-light-grey: #f4f4f4; 
-  --primary-grey: #ccd1d9; 
   --primary-dark-grey: #666666;
-  --primary-lighter-grey: #777777;  
-  --primary-blue: #00FFFF;
-  --primary-dark-blue: #0000b3; 
-  /* --primary-dark-blue: ; */
-  --primary-green: #009900;  
-  --primary-rasp: #FF007F;
-  --primary-purple: #9900cc; 
-  --primary-dark: rgb(52, 58, 64);
-  --primary-red: #ef4035; 
-  --primary-hover-red: #f33501; 
-  --primary-black: #000000; 
+  --primary-blue: #3066BE;
+  --primary-dark-blue: #0e76a8; 
+}
+
+html, body, #app, #app>div {
+  height: 100%
 }
 
 body {
@@ -27,8 +21,9 @@ nav {
   z-index: 2; 
 }
 
-nav .container {
-  
+ 
+.nav-main {
+  background-color: var(--primary-black) !important; 
 }
 
 /***MENU LINKS***/
@@ -39,6 +34,7 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
+  
 }
 
 .navbar-nav>li>a {
@@ -282,7 +278,7 @@ nav ul li {
 
 /***PORTFOLIO***/
 .portfolio-wrapper {
-  background: var(--primary-light-grey); 
+  background: var(--primary-black); 
   padding: 3rem 0; 
   color: var(--primary-dark-blue); 
 }
@@ -390,7 +386,7 @@ nav ul li {
 
  /**CONTACT SECTION**/
 .contact {
-  background: var(--primary-dark-grey); 
+  background: var(--primary-black); 
   padding: 3rem 0; 
 }
 
@@ -491,13 +487,13 @@ textarea.form-control {
 /***FOOTER***/
 .footer {
   background: var(--primary-black); 
-  color: var(--primary-blue); 
+  color: var(--primary-dark-blue); 
   padding: 3rem; 
 }
 
 .footer a {
   text-decoration: none; 
-  color: var(--primary-blue); 
+  color: var(--primary-dark-blue); 
 }
 
 .footer a:hover {
