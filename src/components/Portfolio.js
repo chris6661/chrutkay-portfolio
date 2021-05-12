@@ -23,18 +23,20 @@ const Portfolio = () => {
 
         </>
         )
-        PopupboxManager.open({content})
-    }
-
-    const popupboxConfigLyrically = {
-        titleBar: {
+        PopupboxManager.open({ 
+            content,
+            config: {
+            titleBar: {
             enable: true, 
             text: "Lyrically"
         }, 
         fadeIn: true, 
         fadeInSpeed: 500
     }
+        })
+    }
 
+  
     //notetaker
     const openPopupboxNoteTaker = () => {
         const content = (
@@ -46,17 +48,19 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/note-taker-11")}>https://github.com/chris6661/note-taker-11</a>
         </>
         )
-        PopupboxManager.open({content})
-    }
-
-    const popupboxConfigNoteTaker = {
-        titleBar: {
+        PopupboxManager.open({
+            content, 
+            config: {
+             titleBar: {
             enable: true, 
             text: "Note taing application."
         }, 
-        fadeIn: true, 
-        fadeInSpeed: 500
+            fadeIn: true, 
+            fadeInSpeed: 500   
+            }
+        })
     }
+
 
     //budget tracker
     const openPopupboxBudget = () => {
@@ -69,17 +73,21 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/19-PWA-challenge-budget-tracker")}>https://github.com/chris6661/19-PWA-challenge-budget-tracker</a>
         </>
         )
-        PopupboxManager.open({content})
-    }
-
-    const popupboxConfigBudget = {
-        titleBar: {
+        PopupboxManager.open({
+            content, 
+            config: {
+            titleBar: {
             enable: true, 
             text: "Budget tracking application."
         }, 
-        fadeIn: true, 
-        fadeInSpeed: 500
+            fadeIn: true, 
+            fadeInSpeed: 500
+            }   
+        })
     }
+
+    
+        
 
     //netflix clone
     const openPopupboxNetflix = () => {
@@ -92,17 +100,20 @@ const Portfolio = () => {
         <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/netflix-clone-1")}>https://github.com/chris6661/netflix-clone-1</a>
         </>
         )
-        PopupboxManager.open({content})
-    }
-
-    const popupboxConfigNetflix = {
-        titleBar: {
+        PopupboxManager.open({
+            content,
+            config: {
+               titleBar: {
             enable: true, 
             text: "Netflix Clone Project"
-        }, 
-        fadeIn: true, 
-        fadeInSpeed: 500
+            }, 
+            fadeIn: true, 
+            fadeInSpeed: 500 
+            }
+        })
     }
+
+  
 
     return (
         <div className="portoflio-wrapper">
@@ -149,14 +160,14 @@ const Portfolio = () => {
                 </div> */}
 
             </div>
-           <PopupboxContainer {...popupboxConfigLyrically} />
-            <br />
-            <PopupboxContainer {...popupboxConfigNoteTaker} />
-            <br />
-            <PopupboxContainer {...popupboxConfigBudget} />
-            <br />
-            <PopupboxContainer {...popupboxConfigNetflix} />
+            <div>
+                <PopupboxContainer />  
+            </div>
+         
+        
              </div>
+             <br/>
+             <br/>
              <br/>
         </div>
     )

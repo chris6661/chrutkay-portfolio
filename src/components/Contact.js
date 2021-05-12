@@ -83,6 +83,7 @@ const Contact = () => {
                             className='form-control'
                             placeholder='Subject'
                             {...register('subject', {
+                                type: "required",
                                 required: 'You forgot to add the subject!',
                             })} />
                         <div className='line'></div>
