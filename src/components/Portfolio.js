@@ -42,7 +42,7 @@ const Portfolio = () => {
         const content = (
         <>
         <img className="portfolio-image-popupbox" src={notetaker} alt="Note taking app"/>
-        <p>A simple note taking application for tracking notes through every day life.</p>
+        <p>A simple note taking application for either taking notes down or using as a to-do list..</p>
         <b>Deployed URL:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://nameless-chamber-70517.herokuapp.com/")}>https://nameless-chamber-70517.herokuapp.com/</a>
         <br />
         <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/note-taker-11")}>https://github.com/chris6661/note-taker-11</a>
@@ -53,7 +53,7 @@ const Portfolio = () => {
             config: {
              titleBar: {
             enable: true, 
-            text: "Note taing application."
+            text: "Note Taking Application"
         }, 
             fadeIn: true, 
             fadeInSpeed: 500   
@@ -78,7 +78,7 @@ const Portfolio = () => {
             config: {
             titleBar: {
             enable: true, 
-            text: "Budget tracking application."
+            text: "Budget Tracking Application"
         }, 
             fadeIn: true, 
             fadeInSpeed: 500
@@ -116,7 +116,8 @@ const Portfolio = () => {
   
 
     return (
-        <div className="portfolio-wrapper">
+        <div className="portfolio">
+       
             <div className="portfolio-info">
             <div className="container">
                 <br/>
@@ -154,22 +155,15 @@ const Portfolio = () => {
                     </div>
 
                 </div>
-
-                {/* <div className = "image-box-wrapper row justify-content-center">
-                    <img className="portfolio-image" src={lyrically} alt="Lyrically, a music site"/>
-                </div> */}
-
             </div>
             <div>
                 <PopupboxContainer />  
             </div>
-         
-        
+            
              </div>
-             <br/>
-             <br/>
-             <br/>
+            <br/>
         </div>
+    
     )
 }
 

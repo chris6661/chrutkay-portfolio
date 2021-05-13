@@ -11,7 +11,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact'; 
 import Footer from './components/Footer'; 
 import { BrowserRouter as Router, Route } from 'react-router-dom'; 
-
+import "normalize-css"; 
 function App() {
   return (
     <>
@@ -36,8 +36,9 @@ function App() {
         }
       }
     }} /> */}
+     <div className = "App">
     <Router>
-    <div className = "App">
+   
     <Navbar />
     {/* <Switch> */}
     {/* <Header />  */}
@@ -48,9 +49,10 @@ function App() {
     <Route exact path = "/portfolio" component = {Portfolio} />
     <Route exact path = "/contact" component = {Contact} />
     {/* </Switch> */}
-    <Footer />
-    </div>
     </Router>
+    <Footer />
+    
+    </div>
     </>
   );
 }
