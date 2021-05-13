@@ -12,7 +12,7 @@ import Git from "../images/GitHub-Mark-Light-32px.png"
 const Footer = () => {
     return (
         
-        <div className = 'footer'>
+        <div className = 'footer-wrapper'>
             <div className = 'container'>
                 <div className = 'row'>
                     <div className = 'col-lg-4 col-md-6 col-sm-6'>

@@ -153,15 +153,15 @@ const Portfolio = () => {
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
-
+ <PopupboxContainer /> 
                 </div>
             </div>
-            <div>
-                <PopupboxContainer />  
-            </div>
             
+                
+            
+
              </div>
-            <br/>
+            
         </div>
     
     )

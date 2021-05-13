@@ -14,7 +14,6 @@ body > #root > div {
 }
 
 #root {
- 
   overflow: auto; 
   height: 100vh; 
 }
@@ -39,6 +38,7 @@ nav {
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
+  outline: 0; 
 }
 
 nav ul li {
@@ -62,13 +62,15 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
-/****HEADER****/
+/****HOME****/
 .header-wrapper {
   position: relative; 
   background: url('./images/amsterdambg2.jpg') no-repeat;
   background-size: cover; 
   background-position: center; 
   height: 100vh;  
+  padding: 0 0 45rem 0; 
+
 }
 
 .main-info {
@@ -118,7 +120,7 @@ nav ul li {
 
 .btn-contact:hover {
   text-decoration: none; 
-  background-color: var(--primary-green);
+  background-color: var(--primary-blue);
   color: var(--primary-white); 
   transition: .2s ease-in-out;
 }
@@ -140,9 +142,11 @@ nav ul li {
 /***ABOUT ME***/
 
 .aboutme {
-  background: var(--primary-dark-grey); 
+  background: var(--primary-black); 
   color: white; 
   height: 100vh !important;
+  padding: 0 0 40rem 0; 
+
 }
 
 .photo-wrap {
@@ -290,7 +294,7 @@ nav ul li {
 .portfolio {
   height: 100%; 
     background: var(--primary-black); 
-  padding: 3rem 0; 
+  padding: 0 0 55rem 0; 
   color: var(--primary-dark-blue); 
 }
 
@@ -399,7 +403,7 @@ nav ul li {
  /**CONTACT SECTION**/
 .contact {
   background: var(--primary-black); 
-  padding: 3rem 0; 
+  padding: 3rem 0 35rem 0; 
   height: 100vh; 
 }
 
@@ -450,6 +454,10 @@ nav ul li {
   background: none; 
 }
 
+.contact-btn:hover {
+  background-color: var(--primary-dark-blue);
+}
+
 .line {
   position: relative; 
   top: -0.8rem; 
@@ -498,15 +506,16 @@ textarea.form-control {
 }
 
 /***FOOTER***/
-.footer {
+.footer-wrapper {
   background-color: var(--primary-black); 
   color: var(--primary-dark-blue);
-  margin-top: 1rem; 
-  padding: 1rem; 
-  position: fixed; 
-  bottom: 0; 
-  left: 0; 
+  /* margin-top: 1rem;  */
+  /* padding: 1rem;  */
+  /* position: fixed;  */
+  /* bottom: 0; 
+  left: 0;  */
   width: 100%; 
+  z-index: 100; 
 }
 
 .footer a {
@@ -522,4 +531,10 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0; 
+}
+
+@media(max-width: 768px) {
+  .footer-wrapper{
+    justify-content: center;
+  }
 }
