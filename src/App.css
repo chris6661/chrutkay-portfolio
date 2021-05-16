@@ -377,6 +377,12 @@ nav ul li {
   color: var(--primary-dark-blue); 
 }
 
+.resume {
+  text-align: center;
+  text-transform: uppercase; 
+  font-size: 1.25rem;
+}
+
 /***MEDIA***/
 @media(max-width: 768px) {
   .portfolio-image-popupbox {
