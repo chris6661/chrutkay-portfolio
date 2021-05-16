@@ -14,10 +14,11 @@ const AboutMe = () => {
                 <br/>
                 <h1 className = 'about-heading'>About Me</h1>
                 <p>
-                Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud. </p>
-
-                <p>Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.
+                    My name is Chris. I recently completed the full stack web development coding bootcamp at the University of Texas at Austin. Web development has drawn a passion out of me that I was missing for a long time and I hope to pursue a career as a front end web developer. In the mean time of finding my dream role if you would like to work on a fun project together and build both of our portfolios more, feel free to reach out either by my LinkedIn, GitHub, or email.
+                    <br/><br/>
+                    Outside of the professional world, I love travelling and seeing what the world has to offer and am currently planning my next trip. If you want to know anyhting else or would just like to make a new friend in Austin some time and grab some coffee, fill out the contact form!
                 </p>
+
                 </div>
             </div>
             

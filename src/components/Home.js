@@ -4,10 +4,10 @@ const Home = () => {
     return (
         <div id = 'home' className = "header-wrapper">
             <div className = "main-info">
-                <h1>Hi! I'm Chris.</h1>
+                <h1>Hello! My name is Chris.</h1>
                 <Type
                 className="typed-text"
-                strings={["Full Stack Web Developer"]}
+                strings={["Full Stack Web Developer", "Let's build something together!"]}
                 typeSpeed={40}
                 backSpeed={60}
                 loop

@@ -91,6 +91,7 @@ nav ul li {
   color:var(--primary-white); 
   font-weight: bold; 
   text-transform: uppercase; 
+  font-size: 2.188rem; 
 }
 
 /****TYPED TEXT****/
@@ -143,7 +144,7 @@ nav ul li {
 
 .aboutme {
   background: var(--primary-black); 
-  color: white; 
+  color: var(--primary-dark-blue); ; 
   height: 100vh !important;
   padding: 0 0 40rem 0; 
 
@@ -159,12 +160,12 @@ nav ul li {
   width: 16rem; 
   border-radius: 50%; 
   padding: .3rem; 
-  border: 2px solid var(--primary-blue); 
+  border: 2px solid var(--primary-dark-blue); 
   margin: 33px 0 0 0; 
 }
 
 .about-heading {
-  color: var(--primary-blue); 
+  color: var(--primary-white); 
   text-transform: uppercase; 
 }
 
@@ -293,9 +294,9 @@ nav ul li {
 /***PORTFOLIO***/
 .portfolio {
   height: 100%; 
-    background: var(--primary-black); 
-  padding: 0 0 55rem 0; 
-  color: var(--primary-dark-blue); 
+  background: var(--primary-black); 
+  padding: 0 0 5rem 0; 
+  color: var(--primary-white); 
 }
 
 
@@ -317,6 +318,7 @@ nav ul li {
   width: 15rem; 
   border: 1.5px solid var(--primary-dark-blue); 
   padding:  0.5rem; 
+  height: 8rem; 
 }
 
 .portfolio-image-box {
@@ -346,7 +348,7 @@ nav ul li {
   opacity: 0; 
   margin-left: -8rem; 
   margin-top: 3.6rem; 
-  color: var(--primary-green);
+  color: var(--primary-blue);
   font-size: 1.5rem; 
 }
 
