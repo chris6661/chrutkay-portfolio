@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 //REACTFONT awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
-
+import 'font-awesome/css/font-awesome.min.css';
 const Navbar = () => {
     return (
       <div className="nav-main">
