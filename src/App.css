@@ -544,5 +544,6 @@ textarea.form-control {
 @media(max-width: 768px) {
   .footer-wrapper{
     justify-content: center;
+    display: hidden; 
   }
 }
