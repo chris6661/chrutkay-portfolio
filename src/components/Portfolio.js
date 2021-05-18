@@ -86,9 +86,6 @@ const Portfolio = () => {
         })
     }
 
-    
-        
-
     //netflix clone
     const openPopupboxNetflix = () => {
         const content = (
@@ -155,12 +152,15 @@ const link = <a href = "https://docs.google.com/document/d/e/2PACX-1vRuRLwppqTa1
                     </div>
                         <PopupboxContainer /> 
                 </div>
-            </div>
-            
-            <div className="resume">
+
+<div className="resume">
                 <br/><br/>
                 <p>Click {link} to view my resume.</p>
             </div>
+
+            </div>
+            
+            
 
              </div>
             <br/><br/>
