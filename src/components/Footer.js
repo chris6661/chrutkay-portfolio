@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     FacebookShareButton,
-    FacebookIcon,
     TwitterShareButton, 
     TwitterIcon, 
     LinkedinShareButton, 
@@ -11,7 +10,7 @@ import Git from "../images/GitHub-Mark-Light-32px.png"
 
 const Footer = () => {
     return (
-        
+        <div className="hidden-xs">
         <div className = 'footer-wrapper'>
             <div className = 'container'>
                 <div className = 'row'>
@@ -83,7 +82,8 @@ const Footer = () => {
             </div>      
         </div>
     </div>
+    </div>
     )
 }
 
-export default Footer
+export default Footer;
