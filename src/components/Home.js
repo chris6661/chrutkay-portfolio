@@ -1,5 +1,7 @@
 import React from 'react'
 import Type from 'react-typed'; 
+import {Link} from 'react-router-dom';
+
 const Home = () => {
     return (
         <div id = 'home' className = "header-wrapper">
@@ -12,7 +14,7 @@ const Home = () => {
                 backSpeed={60}
                 loop
                 />
-                <a href= {'contact'} className="btn-contact"> Contact Me </a>
+                <Link  to = "contact"  className="btn-contact" id="nav-link" href="#">Contact Me</Link>
             </div>
         
         </div>
