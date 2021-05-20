@@ -139,11 +139,9 @@ nav ul li {
 
 .aboutme {
   background: var(--primary-black); 
-  color: var(--primary-dark-blue); ; 
-  height: 100vh !important;
-  padding: 0 0 40rem 0; 
+  color: var(--primary-dark-blue); 
+  padding: 0 0 5rem 0; 
   height: 100vh;  
-
 }
 
 .photo-wrap {
@@ -166,8 +164,13 @@ nav ul li {
 }
 
 @media(max-width: 468px) {
+  .aboutme {
+    padding: 0 0 55rem 0; 
+  }
   .profile-img {
-    width: 10rem; }
+    width: 10rem; 
+  }
+
 }
 
 /***SKILLS***/
@@ -291,7 +294,7 @@ nav ul li {
 .portfolio {
   height: 100%; 
   background: var(--primary-black); 
-  padding: 0 0 5rem 0; 
+  padding: 0 0 6rem 0; 
   color: var(--primary-white); 
 }
 
@@ -407,7 +410,7 @@ nav ul li {
  /**CONTACT SECTION**/
 .contact {
   background: var(--primary-black); 
-  padding: 3rem 0 35rem 0; 
+  padding: 3rem 0 40rem 0; 
   height: 100vh; 
   width: 100%; 
 }
@@ -499,6 +502,8 @@ textarea.form-control {
 @media(max-width: 768px) {
   .contact {
     overflow-x: hidden; 
+    padding: 3rem 0 35rem 0; 
+
   }
 
   .contacts .container {
@@ -508,6 +513,7 @@ textarea.form-control {
   .contact p {
     padding: 0 0.4rem; 
   }
+
 }
 
 /***FOOTER***/
