@@ -3,8 +3,6 @@ import netflix from "../images/netflix.png";
 import lyrically from "../images/lyrically.png"; 
 import budget from "../images/budget-tracker.png"; 
 import notetaker from "../images/note-taker.png"; 
-// import regex from "../images/regex-gist-screenshot.png"; 
-// import netflix from "../images/netflix.png"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'; 
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox'; 
@@ -42,7 +40,7 @@ const Portfolio = () => {
         const content = (
         <>
         <img className="portfolio-image-popupbox" src={notetaker} alt="Note taking app"/>
-        <p>A simple note taking application for either taking notes down or using as a to-do list..</p>
+        <p>A simple note taking application for either taking notes down or using as a to-do list.</p>
         <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://nameless-chamber-70517.herokuapp.com/")}>https://nameless-chamber-70517.herokuapp.com/</a>
         <br />
         <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/note-taker-11")}>https://github.com/chris6661/note-taker-11</a>
@@ -151,19 +149,17 @@ const link = <a href = "https://docs.google.com/document/d/e/2PACX-1vRuRLwppqTa1
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                         <PopupboxContainer /> 
-                </div>
 
-<div className="resume">
-                <br/><br/>
-                <p>Click {link} to view my resume.</p>
-            </div>
+                    <div className="resume">
+                        <p>Click {link} to view my resume.</p>
+                    </div>
+<br/>
+                </div>   
 
             </div>
             
-            
-
              </div>
-            <br/><br/>
+         
         </div>
     
     )

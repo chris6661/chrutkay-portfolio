@@ -24,7 +24,6 @@ nav {
   z-index: 2; 
 }
 
- 
 .nav-main {
   background-color: var(--primary-black) !important; 
 }
@@ -292,7 +291,7 @@ nav ul li {
 
 /***PORTFOLIO***/
 .portfolio {
-  height: 100%; 
+  height: 100vh; 
   background: var(--primary-black); 
   padding: 0 0 6rem 0; 
   color: var(--primary-white); 
@@ -359,17 +358,19 @@ nav ul li {
 
 .popupbox-wrapper {
   margin-top: 7rem; 
+  color: black;
 }
 
 /***OVERFLOW BOX***/
 .portfolio-image-popupbox {
   width: 45rem;
   padding: 0.5rem; 
+  color: var(--primary-black);
 }
 
 .portfolio-hyper-link {
   cursor: pointer; 
-  color: var(--primary-green); 
+  color: var(--primary-dark-blue); 
 }
 
 .portfolio-hyper-link:hover { 
@@ -387,11 +388,14 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 100%; 
   }
+  .portfolio {
+    height: 100vh; 
+  }
 }
 
 @media(max-height: 570px) {
   .popupbox-wrapper {
-    height: 100%; 
+    height: 100vh; 
   }
   .portfolio-image-popupbox {
     width: 50%; 

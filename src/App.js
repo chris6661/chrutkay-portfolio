@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact'; 
 import Footer from './components/Footer'; 
 import { BrowserRouter as Router, Route } from 'react-router-dom'; 
-import "normalize-css"; 
+// import "normalize-css"; 
 function App() {
   return (
     <>

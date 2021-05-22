@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import Type from 'react-typed'; 
 import {Link} from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div id = 'home' className = "header-wrapper">
+        <div id = "home" className = "header-wrapper">
             <div className = "main-info">
                 <h1>Hello! My name is Chris.</h1>
                 <Type
