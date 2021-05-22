@@ -363,7 +363,7 @@ nav ul li {
 
 /***OVERFLOW BOX***/
 .portfolio-image-popupbox {
-  width: 45rem;
+  width: 35rem;
   padding: 0.5rem; 
   color: var(--primary-black);
 }
