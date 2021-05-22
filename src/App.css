@@ -411,6 +411,32 @@ nav ul li {
   }
 }
 
+/**RESUME**/
+.resume {
+  background: var(--primary-black); 
+  padding: 3rem 0 40rem 0; 
+  height: 100vh; 
+  width: 100%; 
+}
+
+.resume h1 {
+  color: var(--primary-white); 
+  padding: 1.3rem 0; 
+  text-transform: uppercase; 
+}
+
+.resume h2 {
+  color: var(--primary-white); 
+}
+
+.resume h3 {
+  color: var(--primary-blue);
+}
+
+.resume h4 {
+  color: var(--primary-white); 
+}
+
  /**CONTACT SECTION**/
 .contact {
   background: var(--primary-black); 

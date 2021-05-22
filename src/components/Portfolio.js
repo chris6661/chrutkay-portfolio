@@ -108,8 +108,6 @@ const Portfolio = () => {
         })
     }
 
-const link = <a href = "https://docs.google.com/document/d/e/2PACX-1vRuRLwppqTa1t5p0UAGpRvVGPJbXjLvXg7FUoasOlWckTD5rnqJjOXIbkeiy4XayF5kuxlrYBqCZJWv/pub">here</a>  
-
     return (
         <div className="portfolio">
        
@@ -150,9 +148,6 @@ const link = <a href = "https://docs.google.com/document/d/e/2PACX-1vRuRLwppqTa1
                     </div>
                         <PopupboxContainer /> 
 
-                    <div className="resume">
-                        <p>Click {link} to view my resume.</p>
-                    </div>
 <br/>
                 </div>   
 
