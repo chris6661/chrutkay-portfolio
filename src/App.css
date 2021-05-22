@@ -8,15 +8,15 @@
   --primary-dark-blue: #0e76a8; 
 }
 
-#root {
-  overflow: auto; 
-  height: 100vh; 
-}
 
-body {
+
+html, body {
   font-family: 'Roboto Condensed', sans-serif !important;
-  height: 100vh; 
-  min-height : 100vh;
+  width: 100%; 
+  height: 100%;
+  overflow-x: hidden;  
+  margin: 0px; 
+  padding: 0px; 
 }
 
 /****NAVBAR****/
@@ -291,7 +291,7 @@ nav ul li {
 
 /***PORTFOLIO***/
 .portfolio {
-  height: 100vh; 
+  height: 110vh; 
   background: var(--primary-black); 
   padding: 0 0 6rem 0; 
   color: var(--primary-white); 
@@ -415,7 +415,7 @@ nav ul li {
 .resume {
   background: var(--primary-black); 
   padding: 3rem 0 40rem 0; 
-  height: 100vh; 
+  height: 110vh; 
   width: 100%; 
 }
 

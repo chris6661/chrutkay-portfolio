@@ -14,7 +14,7 @@ const Portfolio = () => {
         const content = (
         <>
         <img className="portfolio-image-popupbox" src={lyrically} alt="Lyrically, a music site"/>
-        <p>An application where the user can enter a song title and the lyrics will display in the box next to the video on the right.</p>
+        <p>Group project application for the user to enter a song title and the lyrics will display in the box on the right side next to the video.</p>
         <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://chris6661.github.io/Lyrically/")}>https://chris6661.github.io/Lyrically/</a>
         <br />
         <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/Lyrically")}>https://github.com/chris6661/Lyrically</a>
@@ -148,7 +148,6 @@ const Portfolio = () => {
                     </div>
                         <PopupboxContainer /> 
 
-<br/>
                 </div>   
 
             </div>
