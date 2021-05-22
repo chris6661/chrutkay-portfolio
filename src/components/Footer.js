@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import {
     FacebookShareButton,
     TwitterShareButton, 
@@ -27,19 +28,19 @@ const Footer = () => {
                     <div className = "col-lg-3 col-md-2 col-sm-6">
                         <div className = 'row'>
                             <div className = 'col'>
-                                <a href={'/'}className = 'footer-nav'>Home</a>
+                            <Link  to = "/" className="footer-nav" href="/#">Home <span className="sr-only">(current)</span></Link>
                                 <br/>
-                                <a href={'about'}className = 'footer-nav'>About Me</a>
+                                <Link to = "/about"  className="footer-nav" >About Me</Link>
                                 <br/>
                                 {/* <a href={'skills'}className = 'footer-nav'>Skills</a> */}
                             </div>
 
                             <div className = 'col'>
-                                <a href={'portfolio'}className = 'footer-nav'>Portfolio</a>
+                            <Link  to = "portfolio"  className="footer-nav" href="/#">Portfolio</Link>
                                 <br/>
-                                <a href={'resume'}className = "footer-nav">Resume </a>
+                                <Link to  = "resume" className="footer-nav" href="#">Resume</Link>
                                 <br/>
-                                <a href={'contact'}className = 'footer-nav'>Contact</a>
+                                <Link  to = "contact"  className="footer-nav" href="/#">Contact</Link>
                                 {/* <a href={'Experience'} className = 'footer-nav'>Experience</a> */}
                                 <br/>
                                 
