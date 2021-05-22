@@ -502,7 +502,7 @@ textarea.form-control {
 @media(max-width: 768px) {
   .contact {
     overflow-x: hidden; 
-    padding: 3rem 0 35rem 0; 
+    padding: 3rem 0 5rem 0; 
 
   }
 

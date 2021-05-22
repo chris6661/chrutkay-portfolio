@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="nav-main">
         <nav className="navbar navbar-expand-lg bg-dark fixed-top">
     <div className='container'>
-        <a className="navbar"> </a>
+        <a className="navbar" href="/#"> </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <FontAwesomeIcon icon={faBars} style={{ color: '#fff'}}/>        
         </button>
@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className="navbar-nav m-auto">
             
             <li className="nav-item active">
-              <Link  to = "/" className="nav-link" href="#">Home <span className="sr-only">(current)</span></Link>
+              <Link  to = "/" className="nav-link" href="/#">Home <span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item">
@@ -34,11 +34,11 @@ const Navbar = () => {
             </li> */}
 
             <li className="nav-item">
-              <Link  to = "portfolio"  className="nav-link" href="#">Portfolio</Link>
+              <Link  to = "portfolio"  className="nav-link" href="/#">Portfolio</Link>
             </li>
            
             <li className="nav-item">
-              <Link  to = "contact"  className="nav-link" href="#">Contact Me</Link>
+              <Link  to = "contact"  className="nav-link" href="/#">Contact Me</Link>
             </li>
 
           </ul>
@@ -51,7 +51,7 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
 
 
 //can put picture or some logo where navbar was line 6, path it right

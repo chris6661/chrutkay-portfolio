@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import netflix from "../images/netflix.png"; 
 import lyrically from "../images/lyrically.png"; 
 import budget from "../images/budget-tracker.png"; 
@@ -17,9 +17,9 @@ const Portfolio = () => {
         <>
         <img className="portfolio-image-popupbox" src={lyrically} alt="Lyrically, a music site"/>
         <p>An application where the user can enter a song title and the lyrics will display in the box next to the video on the right.</p>
-        <b>Deployed URL:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://chris6661.github.io/Lyrically/")}>https://chris6661.github.io/Lyrically/</a>
+        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://chris6661.github.io/Lyrically/")}>https://chris6661.github.io/Lyrically/</a>
         <br />
-        <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/Lyrically")}>https://github.com/chris6661/Lyrically</a>
+        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/Lyrically")}>https://github.com/chris6661/Lyrically</a>
 
         </>
         )
@@ -43,9 +43,9 @@ const Portfolio = () => {
         <>
         <img className="portfolio-image-popupbox" src={notetaker} alt="Note taking app"/>
         <p>A simple note taking application for either taking notes down or using as a to-do list..</p>
-        <b>Deployed URL:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://nameless-chamber-70517.herokuapp.com/")}>https://nameless-chamber-70517.herokuapp.com/</a>
+        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://nameless-chamber-70517.herokuapp.com/")}>https://nameless-chamber-70517.herokuapp.com/</a>
         <br />
-        <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/note-taker-11")}>https://github.com/chris6661/note-taker-11</a>
+        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/note-taker-11")}>https://github.com/chris6661/note-taker-11</a>
         </>
         )
         PopupboxManager.open({
@@ -68,9 +68,9 @@ const Portfolio = () => {
         <>
         <img className="portfolio-image-popupbox" src={budget} alt="Budget tracking app"/>
         <p>A PWA application for keeping track of your budget. It will track offline entries and add them to your current total, then update the total when online functionality is restored.</p>
-        <b>Deployed URL:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://blooming-plateau-02534.herokuapp.com/")}>https://blooming-plateau-02534.herokuapp.com/</a>
+        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://blooming-plateau-02534.herokuapp.com/")}>https://blooming-plateau-02534.herokuapp.com/</a>
         <br />
-        <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/19-PWA-challenge-budget-tracker")}>https://github.com/chris6661/19-PWA-challenge-budget-tracker</a>
+        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/19-PWA-challenge-budget-tracker")}>https://github.com/chris6661/19-PWA-challenge-budget-tracker</a>
         </>
         )
         PopupboxManager.open({
@@ -92,9 +92,9 @@ const Portfolio = () => {
         <>
         <img className="portfolio-image-popupbox" src={netflix} alt="Netflix clone"/>
         <p>A simple Netflix clone side project.</p>
-        <b>Deployed URL:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://elated-ritchie-537ddc.netlify.app")}>https://elated-ritchie-537ddc.netlify.app</a>
+        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://elated-ritchie-537ddc.netlify.app")}>https://elated-ritchie-537ddc.netlify.app</a>
         <br />
-        <b>GitHub:</b> <a className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/netflix-clone-1")}>https://github.com/chris6661/netflix-clone-1</a>
+        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/netflix-clone-1")}>https://github.com/chris6661/netflix-clone-1</a>
         </>
         )
         PopupboxManager.open({
