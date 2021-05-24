@@ -16,7 +16,7 @@ const AboutMe = () => {
                 <p>
                     My name is Chris. I recently completed the full stack web development coding bootcamp at the University of Texas at Austin. Web development has drawn a passion out of me that I was missing for a long time and I hope to pursue a career as a front end web developer. In the mean time of finding my dream role if you would like to work on a fun project together and build both of our portfolios more, feel free to reach out either by my LinkedIn, GitHub, or email.
                     <br/><br/>
-                    Outside of the professional world, I love travelling and seeing what the world has to offer and am currently planning my next trip. If you want to know anyhting else or would just like to make a new friend in Austin some time and grab some coffee, fill out the contact form!
+                    Outside of the professional world, I love travelling and seeing what the world has to offer and am currently planning my next trip. If you want to know anything else or would just like to make a new friend in Austin some time and grab some coffee, fill out the contact form!
                 </p>
 
                 </div>
