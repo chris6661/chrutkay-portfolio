@@ -15,6 +15,7 @@ const Contact = () => {
             serviceId,
             templateId,
             {
+                //react state, boolean value for valid or not, if false dont fire function; if data.xx is empty send message,; run onsubmit if missing data return false
                 name: data.name,
                 email: data.email, 
                 subject: data.subject, 
