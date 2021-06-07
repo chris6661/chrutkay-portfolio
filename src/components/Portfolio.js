@@ -1,5 +1,5 @@
 import React from 'react';
-import netflix from "../images/netflix.png"; 
+import popvinyls from "../images/popvinyls.png"; 
 import lyrically from "../images/lyrically.png"; 
 import budget from "../images/budget-tracker.png"; 
 import notetaker from "../images/note-taker.png"; 
@@ -85,14 +85,14 @@ const Portfolio = () => {
     }
 
     //netflix clone
-    const openPopupboxNetflix = () => {
+    const openPopupboxPopVinyls = () => {
         const content = (
         <>
-        <img className="portfolio-image-popupbox" src={netflix} alt="Netflix clone"/>
-        <p>A simple Netflix clone side project.</p>
-        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://elated-ritchie-537ddc.netlify.app")}>https://elated-ritchie-537ddc.netlify.app</a>
+        <img className="portfolio-image-popupbox" src={popvinyls} alt="E-Commerce MERN Project"/>
+        <p>A full stack MERN E-Commerce application that features records for sale.</p>
+        <b>Deployed URL:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://fathomless-garden-67392.herokuapp.com/")}>https://fathomless-garden-67392.herokuapp.com/</a>
         <br />
-        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/netflix-clone-1")}>https://github.com/chris6661/netflix-clone-1</a>
+        <b>GitHub:</b> <a href="/#" className="portfolio-hyper-link" onClick={() => window.open("https://github.com/chris6661/e-commerce")}>https://github.com/chris6661/e-commerce</a>
         </>
         )
         PopupboxManager.open({
@@ -100,7 +100,7 @@ const Portfolio = () => {
             config: {
                titleBar: {
             enable: true, 
-            text: "Netflix Clone Project"
+            text: "E-Commerce MERN Project"
             }, 
             fadeIn: true, 
             fadeInSpeed: 500 
@@ -141,8 +141,8 @@ const Portfolio = () => {
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
 
-                    <div className ="portfolio-image-box" onClick={openPopupboxNetflix}>
-                    <img className="portfolio-image" src={netflix} alt="Netflix Clone"/>
+                    <div className ="portfolio-image-box" onClick={openPopupboxPopVinyls}>
+                    <img className="portfolio-image" src={popvinyls} alt="MERN E-Commerce"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
