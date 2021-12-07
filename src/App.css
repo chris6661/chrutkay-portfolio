@@ -8,6 +8,23 @@
   --primary-dark-blue: #0e76a8; 
 }
 
+/*new colors when you redo your portfolio 
+normal{
+p: #222831;   dark-gray
+h1: #393e46;   light-gray
+h2: #00ad85;     blue
+h3: #00fff5;   light-blue
+h4: #101820;    black
+h5: #fff;    white
+} 
+
+dark mode {
+  p: #2a2438;  steel gray
+  h1: #352f44;   blackcurrant
+  h2: #5c5470;    smoky
+  h3: #dbd8e3;   mischka
+}
+*/
 
 
 html, body {
@@ -37,7 +54,6 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
-  
 }
 
 .navbar-nav>li>a {

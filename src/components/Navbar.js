@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
 import 'font-awesome/css/font-awesome.min.css';
+
 const Navbar = () => {
     return (
       <div className="nav-main">
@@ -24,14 +25,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to = "/about"  className="nav-link" >About Me</Link>
             </li>
-{/*             
-            <li className="nav-item">
-              <Link to = "/skills"  className="nav-link" href="#">What I Do</Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to  = "experience" className="nav-link" href="#">Experience</Link>
-            </li> */}
 
             <li className="nav-item">
               <Link  to = "portfolio"  className="nav-link" href="/#">Portfolio</Link>
