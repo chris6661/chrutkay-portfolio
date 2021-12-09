@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {
     FacebookShareButton,
     TwitterShareButton, 
@@ -28,19 +28,25 @@ const Footer = () => {
                     <div className = "col-lg-3 col-md-2 col-sm-6">
                         <div className = 'row'>
                             <div className = 'col'>
-                            <Link  to = "/" className="footer-nav" href="/#">Home <span className="sr-only">(current)</span></Link>
+                            {/* <Link  to = "/" className="footer-nav" href="/#">Home <span className="sr-only">(current)</span></Link> */}
+                            <a href="/#" className="footer-nav">Home</a>
                                 <br/>
-                                <Link to = "/about"  className="footer-nav" >About Me</Link>
+                                {/* <Link to = "/about"  className="footer-nav" >About Me</Link> */}
+                                <a href="/#" className="footer-nav">About Me</a>
                                 <br/>
                                 {/* <a href={'skills'}className = 'footer-nav'>Skills</a> */}
+
                             </div>
 
                             <div className = 'col'>
-                            <Link  to = "portfolio"  className="footer-nav" href="/#">Portfolio</Link>
+                            {/* <Link  to = "portfolio"  className="footer-nav" href="/#">Portfolio</Link> */}
+                            <a href="/#" className="footer-nav">Portfolio</a>
                                 <br/>
-                                <Link to  = "resume" className="footer-nav" href="#">Resume</Link>
+                                {/* <Link to  = "resume" className="footer-nav" href="#">Resume</Link> */}
+                                <a href="/#" className="footer-nav">Resume</a>
                                 <br/>
-                                <Link  to = "contact"  className="footer-nav" href="/#">Contact</Link>
+                                {/* <Link  to = "contact"  className="footer-nav" href="/#">Contact</Link> */}
+                                <a href="/#" className="footer-nav">Contact</a>
                                 {/* <a href={'Experience'} className = 'footer-nav'>Experience</a> */}
                                 <br/>
                                 
@@ -78,7 +84,7 @@ const Footer = () => {
                     </div>
                     <p className = 'pt-3 text-center'>
                         Copyright&copy; 
-                        {new Date().getFullYear()}&nbsp; All Rights Reserved
+                        {new Date().getFullYear()}&nbsp; 
                     </p>
                 </div>
             </div>      

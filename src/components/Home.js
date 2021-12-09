@@ -1,6 +1,6 @@
 import React from 'react';
 import Type from 'react-typed'; 
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -14,7 +14,8 @@ const Home = () => {
                 backSpeed={60}
                 loop
                 />
-                <Link  to = "contact"  className="btn-contact" id="nav-link" href="#">Contact Me</Link>
+                {/* <Link  to = "contact"  className="btn-contact" id="nav-link" href="#">Contact Me</Link> */}
+                <a href = "/#" className="btn-contact">Contact Me</a>
             </div>
         
         </div>

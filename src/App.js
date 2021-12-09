@@ -7,25 +7,31 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume'; 
 import Contact from './components/Contact'; 
 import Footer from './components/Footer'; 
-import { BrowserRouter as Router, Route } from 'react-router-dom'; 
+// import { BrowserRouter as Router, Route } from 'react-router-dom'; 
 // import "normalize-css"; 
 function App() {
   return (
     <>
     
-    <Router>
+    {/* <Router> */}
 
     <div>
     <Navbar />
     <div className ="app-container">
 
-    <Route exact path = '/' component = {Home} />
+    <Home />
+    <AboutMe />
+    <Portfolio />
+    <Resume />
+    <Contact />
+
+    {/* <Route exact path = '/' component = {Home} />
     <Route exact path = "/about" component = {AboutMe} />
    
     <Route exact path = "/portfolio" component = {Portfolio} />
     <Route exact path = "/resume" component = {Resume} />
 
-    <Route exact path = "/contact" component = {Contact} />
+    <Route exact path = "/contact" component = {Contact} /> */}
 
     </div>
 
@@ -33,7 +39,7 @@ function App() {
      
     </div>
 
-    </Router>
+    {/* </Router> */}
     </>
   );
 }

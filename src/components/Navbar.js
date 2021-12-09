@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 //REACTFONT awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 import { faBars } from "@fortawesome/free-solid-svg-icons"; 
@@ -19,23 +19,28 @@ const Navbar = () => {
           <ul className="navbar-nav m-auto">
             
             <li className="nav-item active">
-              <Link  to = "/" className="nav-link" href="/#">Home <span className="sr-only">(current)</span></Link>
+              <a href = "home" className = "nav-link">Home</a>
+              {/* <Link  to = "/" className="nav-link" href="/#">Home <span className="sr-only">(current)</span></Link> */}
             </li>
 
             <li className="nav-item">
-              <Link to = "/about"  className="nav-link" >About Me</Link>
+              <a href = "about" className = "nav-link">About</a>
+              {/* <Link to = "/about"  className="nav-link" >About Me</Link> */}
             </li>
 
             <li className="nav-item">
-              <Link  to = "portfolio"  className="nav-link" href="/#">Portfolio</Link>
+              <a href = "#portfolio" className = "nav-link">Portfolio</a>
+              {/* <Link  to = "portfolio"  className="nav-link" href="/#">Portfolio</Link> */}
             </li>
                                    
             <li className="nav-item">
-              <Link to  = "resume" className="nav-link" href="#">Resume</Link>
+              <a href = "resume" className = "nav-link">Resume</a>
+              {/* <Link to  = "resume" className="nav-link" href="#">Resume</Link> */}
             </li>
 
             <li className="nav-item">
-              <Link  to = "contact"  className="nav-link" href="/#">Contact Me</Link>
+              <a href = "contact" className = "nav-link">Contact</a>
+              {/* <Link  to = "contact"  className="nav-link" href="/#">Contact Me</Link> */}
             </li>
 
           </ul>
